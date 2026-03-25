@@ -355,21 +355,81 @@
       );
     });
 
-    // Testimonial section
-    gsap.fromTo('.testimonial__inner',
-      { y: 50, opacity: 0 },
-      {
-        scrollTrigger: {
-          trigger: '.testimonial',
-          start: 'top 75%',
-          toggleActions: 'play none none none'
-        },
-        y: 0,
-        opacity: 1,
-        duration: 1,
-        ease: 'power3.out'
-      }
-    );
+    // Process steps stagger
+    gsap.utils.toArray('.process__step').forEach((step, i) => {
+      gsap.fromTo(step,
+        { y: 40, opacity: 0 },
+        {
+          scrollTrigger: {
+            trigger: step,
+            start: 'top 85%',
+            toggleActions: 'play none none none'
+          },
+          y: 0,
+          opacity: 1,
+          duration: 0.7,
+          delay: i * 0.15,
+          ease: 'power3.out'
+        }
+      );
+    });
+
+    // Results stat cards
+    gsap.utils.toArray('.results__stat').forEach((stat, i) => {
+      gsap.fromTo(stat,
+        { scale: 0.9, opacity: 0 },
+        {
+          scrollTrigger: {
+            trigger: stat,
+            start: 'top 85%',
+            toggleActions: 'play none none none'
+          },
+          scale: 1,
+          opacity: 1,
+          duration: 0.6,
+          delay: i * 0.12,
+          ease: 'back.out(1.4)'
+        }
+      );
+    });
+
+    // Industry cards stagger
+    gsap.utils.toArray('.industry-card').forEach((card, i) => {
+      gsap.fromTo(card,
+        { y: 30, opacity: 0 },
+        {
+          scrollTrigger: {
+            trigger: card,
+            start: 'top 88%',
+            toggleActions: 'play none none none'
+          },
+          y: 0,
+          opacity: 1,
+          duration: 0.5,
+          delay: i * 0.08,
+          ease: 'power3.out'
+        }
+      );
+    });
+
+    // FAQ items stagger
+    gsap.utils.toArray('.faq__item').forEach((item, i) => {
+      gsap.fromTo(item,
+        { y: 20, opacity: 0 },
+        {
+          scrollTrigger: {
+            trigger: item,
+            start: 'top 88%',
+            toggleActions: 'play none none none'
+          },
+          y: 0,
+          opacity: 1,
+          duration: 0.6,
+          delay: i * 0.08,
+          ease: 'power3.out'
+        }
+      );
+    });
 
     // Globe rings rotate faster on scroll
     gsap.to('.globe-ring--1', {

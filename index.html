@@ -35,6 +35,69 @@
 
 <link rel="stylesheet" href="./base.css">
 <link rel="stylesheet" href="./style.css">
+
+<!-- FAQ Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Generative Engine Optimisation (GEO)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GEO is the practice of optimising your website and content so that AI-powered search engines — like ChatGPT, Google AI Overviews, Perplexity, and Claude — cite your business in their answers. It's the AI-era equivalent of SEO, focused on earning citations rather than ranking links."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is GEO different from SEO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SEO focuses on ranking your website in traditional search results (ten blue links). GEO focuses on getting your brand mentioned and cited by AI engines that generate direct answers. You still need SEO as a foundation — GEO builds on top of it to capture the fast-growing AI search channel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I still need SEO if I invest in GEO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. AI engines heavily reference traditional search results when building their answers. Strong SEO makes GEO more effective — they work together. We recommend a combined approach, and our audits cover both."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long before I see results?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most clients see their first AI citations within 4–8 weeks of implementing technical and content changes. Significant, measurable growth in AI referral traffic typically happens within 3 months."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which AI platforms do you optimise for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We optimise for all major generative search engines: ChatGPT, Google AI Overviews (and AI Mode), Perplexity, Claude, Gemini, Microsoft Copilot, and emerging platforms. Our approach is engine-agnostic — the fundamentals of citability work across all AI models."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the free GEO audit include?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our free audit scores your website 0–100 across six categories: AI citability, brand authority, content quality, technical foundations, structured data, and platform optimisation. You'll receive a report with prioritised recommendations and a clear roadmap for improvement."
+      }
+    }
+  ],
+  "creator": {
+    "@type": "SoftwareApplication",
+    "name": "Perplexity Computer",
+    "url": "https://www.perplexity.ai/computer"
+  }
+}
+</script>
 </head>
 <body>
 
@@ -62,7 +125,8 @@
   <nav class="nav__links" aria-label="Main navigation">
     <a href="#hero" class="nav__link nav__link--active">Home</a>
     <a href="#capabilities" class="nav__link">Services</a>
-    <a href="#testimonial" class="nav__link">Case Studies</a>
+    <a href="#process" class="nav__link">How It Works</a>
+    <a href="#faq" class="nav__link">FAQ</a>
   </nav>
 
   <a href="#cta" class="btn btn--primary btn--sm nav__cta">
@@ -88,7 +152,7 @@
       </span>
     </h1>
 
-    <p class="hero__body reveal-text">AI search traffic grew 527% last year. Traditional SEO alone won't save you. Generative Engine Optimisation ensures your brand gets cited by ChatGPT, Google AI Overviews, Perplexity, and every AI that matters.</p>
+    <p class="hero__body reveal-text">AI search traffic grew 527% last year. Your competitors are already getting cited by ChatGPT, Perplexity, and Google AI Overviews. We make sure you are too.</p>
 
     <div class="hero__actions reveal-text">
       <a href="#cta" class="btn btn--primary btn--lg">
@@ -132,6 +196,41 @@
   </div>
 </section>
 
+<!-- ===== WHAT IS GEO? ===== -->
+<section class="explainer" id="explainer">
+  <div class="explainer__inner">
+    <div class="explainer__text reveal-up">
+      <span class="section-label">The Shift</span>
+      <h2 class="section-title">SEO gets you ranked.<br>GEO gets you <span class="accent">cited</span>.</h2>
+      <p class="explainer__body">Generative Engine Optimisation (GEO) is the practice of making your business visible to AI-powered search engines &mdash; ChatGPT, Google AI Overviews, Perplexity, Claude, and Gemini. When someone asks an AI "who's the best solicitor in Manchester?" or "which SaaS tool handles invoicing?" &mdash; GEO is what determines whether <strong>your brand</strong> appears in the answer.</p>
+      <p class="explainer__body">Traditional SEO focuses on ranking links. GEO focuses on earning citations. The AI doesn't show ten blue links &mdash; it gives one answer, backed by the sources it trusts most. If your content isn't structured for AI extraction, you're invisible to the fastest-growing search channel on the planet.</p>
+    </div>
+    <div class="explainer__comparison reveal-card">
+      <div class="explainer__col">
+        <span class="explainer__col-label explainer__col-label--old">Traditional SEO</span>
+        <ul class="explainer__list">
+          <li>Rank in 10 blue links</li>
+          <li>Compete on backlinks</li>
+          <li>Optimise for keywords</li>
+          <li>Win clicks</li>
+        </ul>
+      </div>
+      <div class="explainer__divider">
+        <span class="material-symbols-outlined">arrow_forward</span>
+      </div>
+      <div class="explainer__col">
+        <span class="explainer__col-label explainer__col-label--new">GEO</span>
+        <ul class="explainer__list">
+          <li>Get cited in AI answers</li>
+          <li>Build brand authority</li>
+          <li>Optimise for AI extraction</li>
+          <li>Win trust &amp; conversions</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ===== CAPABILITIES ===== -->
 <section class="capabilities" id="capabilities">
   <div class="section-header">
@@ -144,8 +243,9 @@
       <div class="capability-card__icon">
         <span class="material-symbols-outlined">map</span>
       </div>
-      <h3 class="capability-card__title">GEO Scoring & Audit</h3>
-      <p class="capability-card__text">Our proprietary 0-100 scoring system analyses your website across 6 categories using 5 parallel AI agents &mdash; measuring AI citability, brand authority, content quality, technical foundations, structured data, and platform optimisation.</p>
+      <h3 class="capability-card__title">GEO Scoring &amp; Audit</h3>
+      <p class="capability-card__desc">Know exactly where you stand &mdash; and where to focus first.</p>
+      <p class="capability-card__text">Our proprietary 0&ndash;100 scoring system analyses your site across 6 AI-visibility categories. You'll get a clear roadmap showing which fixes will move the needle fastest.</p>
     </div>
 
     <div class="capability-card reveal-card" style="--card-delay: 1">
@@ -153,7 +253,8 @@
         <span class="material-symbols-outlined">bolt</span>
       </div>
       <h3 class="capability-card__title">AI Citability</h3>
-      <p class="capability-card__text">Optimise your content so AI engines can extract quotable passages &mdash; the optimal 134-167 word format that gets cited.</p>
+      <p class="capability-card__desc">Turn your content into the source AI engines quote.</p>
+      <p class="capability-card__text">We restructure your pages so AI can extract clean, quotable passages &mdash; the kind that appear as cited answers in ChatGPT, Perplexity, and Google AI Overviews.</p>
     </div>
 
     <div class="capability-card reveal-card" style="--card-delay: 2">
@@ -161,15 +262,35 @@
         <span class="material-symbols-outlined">analytics</span>
       </div>
       <h3 class="capability-card__title">Brand Authority</h3>
-      <p class="capability-card__text">Brand mentions correlate 3x more strongly with AI visibility than backlinks. We build your presence where AI engines look.</p>
+      <p class="capability-card__desc">Be the name AI engines trust and recommend.</p>
+      <p class="capability-card__text">Brand mentions correlate 3x more strongly with AI visibility than backlinks. We build your presence across the platforms, publications, and directories that AI engines monitor.</p>
     </div>
 
     <div class="capability-card reveal-card" style="--card-delay: 3">
       <div class="capability-card__icon">
         <span class="material-symbols-outlined">shield</span>
       </div>
-      <h3 class="capability-card__title">Platform Optimisation</h3>
-      <p class="capability-card__text">From robots.txt and AI crawler management across 14 crawlers, to llms.txt implementation and JSON-LD structured data &mdash; we handle the technical foundations that make your site AI-ready.</p>
+      <h3 class="capability-card__title">Technical Foundations</h3>
+      <p class="capability-card__desc">Remove every barrier between your site and AI crawlers.</p>
+      <p class="capability-card__text">From robots.txt configuration and AI crawler management to llms.txt, JSON-LD structured data, and schema markup &mdash; we make your site technically ready for every major AI platform.</p>
+    </div>
+
+    <div class="capability-card reveal-card" style="--card-delay: 4">
+      <div class="capability-card__icon">
+        <span class="material-symbols-outlined">edit_note</span>
+      </div>
+      <h3 class="capability-card__title">Content Strategy</h3>
+      <p class="capability-card__desc">Publish content that both humans and AI engines value.</p>
+      <p class="capability-card__text">We create and optimise content using a three-layer structure: a direct answer AI can extract, a contextual summary, and deep analysis that builds authority and trust.</p>
+    </div>
+
+    <div class="capability-card reveal-card" style="--card-delay: 5">
+      <div class="capability-card__icon">
+        <span class="material-symbols-outlined">monitoring</span>
+      </div>
+      <h3 class="capability-card__title">Monitoring &amp; Reporting</h3>
+      <p class="capability-card__desc">Track your AI visibility as it grows &mdash; month by month.</p>
+      <p class="capability-card__text">We track your brand's citation frequency across ChatGPT, Perplexity, Gemini, and AI Overviews, with monthly reports showing ranking changes, new citations, and ROI.</p>
     </div>
   </div>
 </section>
@@ -195,20 +316,157 @@
   </div>
 </section>
 
-<!-- ===== TESTIMONIAL ===== -->
-<section class="testimonial" id="testimonial">
-  <div class="testimonial__inner reveal-up">
-    <span class="material-symbols-outlined testimonial__quote-icon">format_quote</span>
-    <blockquote class="testimonial__text">
-      &ldquo;Ember GEO transformed how AI search engines see our firm. Within three months, we went from invisible to being cited by ChatGPT and Perplexity for commercial property queries. Our inbound enquiries from AI referrals are up 340%.&rdquo;
-    </blockquote>
-    <div class="testimonial__author">
-      <div class="testimonial__avatar">JW</div>
-      <div class="testimonial__info">
-        <span class="testimonial__name">James Whitfield</span>
-        <span class="testimonial__role">Managing Partner, Whitfield & Cole Solicitors</span>
+<!-- ===== HOW WE WORK (PROCESS) ===== -->
+<section class="process" id="process">
+  <div class="section-header">
+    <span class="section-label reveal-up">How It Works</span>
+    <h2 class="section-title reveal-up">Four steps to AI visibility</h2>
+  </div>
+
+  <div class="process__grid">
+    <div class="process__step reveal-card" style="--card-delay: 0">
+      <span class="process__number">01</span>
+      <h3 class="process__title">Audit</h3>
+      <p class="process__text">We score your site 0&ndash;100 across six AI-visibility categories and identify every gap holding you back from being cited.</p>
+    </div>
+    <div class="process__connector reveal-card" style="--card-delay: 0" aria-hidden="true">
+      <span class="material-symbols-outlined">chevron_right</span>
+    </div>
+    <div class="process__step reveal-card" style="--card-delay: 1">
+      <span class="process__number">02</span>
+      <h3 class="process__title">Strategy</h3>
+      <p class="process__text">We build a tailored GEO roadmap &mdash; prioritised by impact &mdash; covering content, technical, and authority actions.</p>
+    </div>
+    <div class="process__connector reveal-card" style="--card-delay: 1" aria-hidden="true">
+      <span class="material-symbols-outlined">chevron_right</span>
+    </div>
+    <div class="process__step reveal-card" style="--card-delay: 2">
+      <span class="process__number">03</span>
+      <h3 class="process__title">Optimise</h3>
+      <p class="process__text">We restructure your content for AI extraction, implement schema and llms.txt, and build brand authority where AI engines look.</p>
+    </div>
+    <div class="process__connector reveal-card" style="--card-delay: 2" aria-hidden="true">
+      <span class="material-symbols-outlined">chevron_right</span>
+    </div>
+    <div class="process__step reveal-card" style="--card-delay: 3">
+      <span class="process__number">04</span>
+      <h3 class="process__title">Monitor</h3>
+      <p class="process__text">We track your citations across every major AI platform and report on new mentions, traffic growth, and conversion impact monthly.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RESULTS (replaces fake testimonial) ===== -->
+<section class="results" id="results">
+  <div class="results__inner reveal-up">
+    <span class="section-label">Why It Matters</span>
+    <h2 class="section-title">AI traffic converts at a different level</h2>
+    <p class="results__subtitle">The data is clear: visitors from AI search arrive with intent already formed. They've done their research inside the conversation &mdash; by the time they click, they're ready to act.</p>
+    <div class="results__stats">
+      <div class="results__stat reveal-card" style="--card-delay: 0">
+        <span class="results__stat-value">5.1x</span>
+        <span class="results__stat-label">Higher conversion rate from AI search vs organic, across 347 companies</span>
+        <span class="results__stat-source">Superprompt, 2025</span>
+      </div>
+      <div class="results__stat reveal-card" style="--card-delay: 1">
+        <span class="results__stat-value">83%</span>
+        <span class="results__stat-label">Zero-click rate when AI Overviews are present &mdash; users get their answer without clicking</span>
+        <span class="results__stat-source">ALM Corp / SparkToro, 2025</span>
+      </div>
+      <div class="results__stat reveal-card" style="--card-delay: 2">
+        <span class="results__stat-value">15.9%</span>
+        <span class="results__stat-label">Conversion rate from ChatGPT traffic, vs 1.76% from Google organic</span>
+        <span class="results__stat-source">Superprompt / serps.io, 2026</span>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ===== WHO IT'S FOR ===== -->
+<section class="industries" id="industries">
+  <div class="section-header">
+    <span class="section-label reveal-up">Who It's For</span>
+    <h2 class="section-title reveal-up">Built for UK businesses ready to lead</h2>
+  </div>
+
+  <div class="industries__grid">
+    <div class="industry-card reveal-card" style="--card-delay: 0">
+      <span class="material-symbols-outlined industry-card__icon">gavel</span>
+      <span class="industry-card__name">Legal &amp; Professional Services</span>
+    </div>
+    <div class="industry-card reveal-card" style="--card-delay: 1">
+      <span class="material-symbols-outlined industry-card__icon">code</span>
+      <span class="industry-card__name">SaaS &amp; Technology</span>
+    </div>
+    <div class="industry-card reveal-card" style="--card-delay: 2">
+      <span class="material-symbols-outlined industry-card__icon">shopping_cart</span>
+      <span class="industry-card__name">E-commerce &amp; Retail</span>
+    </div>
+    <div class="industry-card reveal-card" style="--card-delay: 3">
+      <span class="material-symbols-outlined industry-card__icon">account_balance</span>
+      <span class="industry-card__name">Finance &amp; Accounting</span>
+    </div>
+    <div class="industry-card reveal-card" style="--card-delay: 4">
+      <span class="material-symbols-outlined industry-card__icon">health_and_safety</span>
+      <span class="industry-card__name">Healthcare &amp; Wellness</span>
+    </div>
+    <div class="industry-card reveal-card" style="--card-delay: 5">
+      <span class="material-symbols-outlined industry-card__icon">apartment</span>
+      <span class="industry-card__name">Property &amp; Construction</span>
+    </div>
+  </div>
+  <p class="industries__note reveal-up">GEO works for any business that wants to be found when people ask AI for recommendations. If your customers are searching, we can help.</p>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq" id="faq">
+  <div class="section-header">
+    <span class="section-label reveal-up">FAQ</span>
+    <h2 class="section-title reveal-up">Common questions about GEO</h2>
+  </div>
+
+  <div class="faq__list">
+    <details class="faq__item reveal-up">
+      <summary class="faq__question">What is Generative Engine Optimisation (GEO)?</summary>
+      <div class="faq__answer">
+        <p>GEO is the practice of optimising your website and content so that AI-powered search engines &mdash; like ChatGPT, Google AI Overviews, Perplexity, and Claude &mdash; cite your business in their answers. It's the AI-era equivalent of SEO, focused on earning citations rather than ranking links.</p>
+      </div>
+    </details>
+
+    <details class="faq__item reveal-up">
+      <summary class="faq__question">How is GEO different from SEO?</summary>
+      <div class="faq__answer">
+        <p>SEO focuses on ranking your website in traditional search results (ten blue links). GEO focuses on getting your brand mentioned and cited by AI engines that generate direct answers. You still need SEO as a foundation &mdash; GEO builds on top of it to capture the fast-growing AI search channel.</p>
+      </div>
+    </details>
+
+    <details class="faq__item reveal-up">
+      <summary class="faq__question">Do I still need SEO if I invest in GEO?</summary>
+      <div class="faq__answer">
+        <p>Yes. AI engines heavily reference traditional search results when building their answers. Strong SEO makes GEO more effective &mdash; they work together. We recommend a combined approach, and our audits cover both.</p>
+      </div>
+    </details>
+
+    <details class="faq__item reveal-up">
+      <summary class="faq__question">How long before I see results?</summary>
+      <div class="faq__answer">
+        <p>Most clients see their first AI citations within 4&ndash;8 weeks of implementing technical and content changes. Significant, measurable growth in AI referral traffic typically happens within 3 months. The timeline depends on your current content quality and competitive landscape.</p>
+      </div>
+    </details>
+
+    <details class="faq__item reveal-up">
+      <summary class="faq__question">Which AI platforms do you optimise for?</summary>
+      <div class="faq__answer">
+        <p>We optimise for all major generative search engines: ChatGPT, Google AI Overviews (and AI Mode), Perplexity, Claude, Gemini, Microsoft Copilot, and emerging platforms. Our approach is engine-agnostic &mdash; the fundamentals of citability work across all AI models.</p>
+      </div>
+    </details>
+
+    <details class="faq__item reveal-up">
+      <summary class="faq__question">What does the free GEO audit include?</summary>
+      <div class="faq__answer">
+        <p>Our free audit scores your website 0&ndash;100 across six categories: AI citability, brand authority, content quality, technical foundations, structured data, and platform optimisation. You'll receive a report with prioritised recommendations and a clear roadmap for improvement.</p>
+      </div>
+    </details>
   </div>
 </section>
 
@@ -217,16 +475,17 @@
   <div class="cta__content">
     <div class="cta__text-block reveal-up">
       <h2 class="cta__title">Ready to be seen by AI?</h2>
-      <p class="cta__body">Only 23% of marketers are investing in GEO. The first-mover advantage is real &mdash; and it's closing fast. Get your free GEO score today.</p>
+      <p class="cta__body">The first-mover advantage is real &mdash; and it's closing fast. Get your free GEO score and find out where you stand.</p>
       <form class="cta__form" onsubmit="event.preventDefault()">
         <input type="email" class="cta__input" placeholder="Enter your business email" aria-label="Business email address" required>
         <button type="submit" class="btn btn--primary btn--md">
           <span class="btn__text-wrap">
-            <span class="btn__text">Get Started</span>
-            <span class="btn__text-clone" aria-hidden="true">Get Started</span>
+            <span class="btn__text">Get Your Free GEO Score</span>
+            <span class="btn__text-clone" aria-hidden="true">Get Your Free GEO Score</span>
           </span>
         </button>
       </form>
+      <p class="cta__note">We'll send your personalised GEO report within 48 hours. No obligations.</p>
     </div>
     <div class="cta__visual reveal-card">
       <div class="cta__globe" id="globe-container">
@@ -258,10 +517,9 @@
     </div>
     <div class="footer__links">
       <a href="#capabilities" class="footer__link">Services</a>
-      <a href="#testimonial" class="footer__link">Case Studies</a>
+      <a href="#process" class="footer__link">How It Works</a>
+      <a href="#faq" class="footer__link">FAQ</a>
       <a href="#cta" class="footer__link">Contact</a>
-      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
-      <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer__link">Twitter</a>
     </div>
   </div>
   <div class="footer__bottom">
