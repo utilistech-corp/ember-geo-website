@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+
+<!-- Perplexity Computer Attribution — SEO Meta Tags -->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ember GEO — Generative Engine Optimisation for UK Businesses</title>
+<meta name="description" content="AI search traffic grew 527% last year. Ember GEO ensures your brand gets cited by ChatGPT, Google AI Overviews, Perplexity, and every AI that matters.">
+
+<!-- Fonts -->
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=general-sans@300,400,500,600,700&display=swap" rel="stylesheet">
+
+<!-- Material Symbols -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+
+<!-- GSAP for advanced animations -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js" defer></script>
+
+<link rel="stylesheet" href="./base.css">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<!-- ===== CANVAS BACKGROUND ===== -->
+<canvas id="ember-canvas"></canvas>
+
+<!-- ===== NAVIGATION ===== -->
+<header class="nav" id="nav">
+  <a href="/" class="nav__logo" aria-label="Ember GEO Home">
+    <svg width="180" height="32" viewBox="0 0 180 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Ember flame icon -->
+      <path d="M8 28C8 28 4 22 4 16C4 10 8 4 12 4C10 10 14 14 16 16C18 18 20 14 18 10C22 14 24 18 24 22C24 26 20 28 16 28C14 28 12 27 10 26" fill="url(#flame-grad)" />
+      <defs>
+        <linearGradient id="flame-grad" x1="4" y1="28" x2="20" y2="4" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#FF2200"/>
+          <stop offset="0.5" stop-color="#FF4433"/>
+          <stop offset="1" stop-color="#FF8855"/>
+        </linearGradient>
+      </defs>
+      <!-- Text: Ember GEO -->
+      <text x="32" y="22" fill="currentColor" font-family="'Clash Display', sans-serif" font-weight="600" font-size="20">Ember <tspan fill="#FF4433">GEO</tspan></text>
+    </svg>
+  </a>
+
+  <nav class="nav__links" aria-label="Main navigation">
+    <a href="#hero" class="nav__link nav__link--active">Home</a>
+    <a href="#capabilities" class="nav__link">Services</a>
+    <a href="#testimonial" class="nav__link">Case Studies</a>
+  </nav>
+
+  <a href="#cta" class="btn btn--primary btn--sm nav__cta">
+    <span class="btn__text-wrap">
+      <span class="btn__text">Get Started</span>
+      <span class="btn__text-clone" aria-hidden="true">Get Started</span>
+    </span>
+  </a>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="hero__content">
+    <h1 class="hero__title" aria-label="Your website is invisible to AI search">
+      <span class="hero__line">
+        <span class="word" data-chars>YOUR</span> <span class="word" data-chars>WEBSITE</span> <span class="word" data-chars>IS</span>
+      </span>
+      <span class="hero__line hero__line--accent">
+        <span class="word" data-chars>INVISIBLE</span>
+      </span>
+      <span class="hero__line">
+        <span class="word" data-chars>TO</span> <span class="word" data-chars>AI</span> <span class="word" data-chars>SEARCH.</span>
+      </span>
+    </h1>
+
+    <p class="hero__body reveal-text">AI search traffic grew 527% last year. Traditional SEO alone won't save you. Generative Engine Optimisation ensures your brand gets cited by ChatGPT, Google AI Overviews, Perplexity, and every AI that matters.</p>
+
+    <div class="hero__actions reveal-text">
+      <a href="#cta" class="btn btn--primary btn--lg">
+        <span class="btn__text-wrap">
+          <span class="btn__text">Get Your GEO Score</span>
+          <span class="btn__text-clone" aria-hidden="true">Get Your GEO Score</span>
+        </span>
+      </a>
+      <a href="#capabilities" class="btn btn--ghost btn--lg">
+        <span class="btn__text-wrap">
+          <span class="btn__text">View Services</span>
+          <span class="btn__text-clone" aria-hidden="true">View Services</span>
+        </span>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero__visual">
+    <div class="hero__card-float reveal-card">
+      <div class="hero__card-icon">
+        <span class="material-symbols-outlined">bolt</span>
+      </div>
+      <div class="hero__card-content">
+        <span class="hero__card-label">AI Search Growth</span>
+        <span class="hero__card-value" data-counter="527">0<span class="hero__card-suffix">%</span></span>
+        <span class="hero__card-desc">Year-over-year increase in AI search traffic across all platforms.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="scroll-indicator">
+    <div class="scroll-indicator__dots">
+      <span class="scroll-indicator__dot"></span>
+      <span class="scroll-indicator__dot"></span>
+      <span class="scroll-indicator__dot"></span>
+      <span class="scroll-indicator__dot"></span>
+      <span class="scroll-indicator__dot"></span>
+    </div>
+    <span class="scroll-indicator__text">Scroll</span>
+  </div>
+</section>
+
+<!-- ===== CAPABILITIES ===== -->
+<section class="capabilities" id="capabilities">
+  <div class="section-header">
+    <span class="section-label reveal-up">What We Do</span>
+    <h2 class="section-title reveal-up">Built for the AI Search Era</h2>
+  </div>
+
+  <div class="capabilities__grid">
+    <div class="capability-card reveal-card" style="--card-delay: 0">
+      <div class="capability-card__icon">
+        <span class="material-symbols-outlined">map</span>
+      </div>
+      <h3 class="capability-card__title">GEO Scoring & Audit</h3>
+      <p class="capability-card__text">Our proprietary 0-100 scoring system analyses your website across 6 categories using 5 parallel AI agents &mdash; measuring AI citability, brand authority, content quality, technical foundations, structured data, and platform optimisation.</p>
+    </div>
+
+    <div class="capability-card reveal-card" style="--card-delay: 1">
+      <div class="capability-card__icon">
+        <span class="material-symbols-outlined">bolt</span>
+      </div>
+      <h3 class="capability-card__title">AI Citability</h3>
+      <p class="capability-card__text">Optimise your content so AI engines can extract quotable passages &mdash; the optimal 134-167 word format that gets cited.</p>
+    </div>
+
+    <div class="capability-card reveal-card" style="--card-delay: 2">
+      <div class="capability-card__icon">
+        <span class="material-symbols-outlined">analytics</span>
+      </div>
+      <h3 class="capability-card__title">Brand Authority</h3>
+      <p class="capability-card__text">Brand mentions correlate 3x more strongly with AI visibility than backlinks. We build your presence where AI engines look.</p>
+    </div>
+
+    <div class="capability-card reveal-card" style="--card-delay: 3">
+      <div class="capability-card__icon">
+        <span class="material-symbols-outlined">shield</span>
+      </div>
+      <h3 class="capability-card__title">Platform Optimisation</h3>
+      <p class="capability-card__text">From robots.txt and AI crawler management across 14 crawlers, to llms.txt implementation and JSON-LD structured data &mdash; we handle the technical foundations that make your site AI-ready.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<section class="stats" id="stats">
+  <div class="stats__grid">
+    <div class="stat reveal-card" style="--card-delay: 0">
+      <span class="stat__value" data-counter="527">0</span>
+      <span class="stat__suffix">%</span>
+      <span class="stat__label">AI search traffic growth year-over-year</span>
+    </div>
+    <div class="stat reveal-card" style="--card-delay: 1">
+      <span class="stat__value" data-counter-decimal="4.4">0</span>
+      <span class="stat__suffix">x</span>
+      <span class="stat__label">Higher conversion rate from AI traffic vs organic search</span>
+    </div>
+    <div class="stat reveal-card" style="--card-delay: 2">
+      <span class="stat__value" data-counter="50">0</span>
+      <span class="stat__suffix">%</span>
+      <span class="stat__label">Projected drop in traditional search traffic by 2028 (Gartner)</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIAL ===== -->
+<section class="testimonial" id="testimonial">
+  <div class="testimonial__inner reveal-up">
+    <span class="material-symbols-outlined testimonial__quote-icon">format_quote</span>
+    <blockquote class="testimonial__text">
+      &ldquo;Ember GEO transformed how AI search engines see our firm. Within three months, we went from invisible to being cited by ChatGPT and Perplexity for commercial property queries. Our inbound enquiries from AI referrals are up 340%.&rdquo;
+    </blockquote>
+    <div class="testimonial__author">
+      <div class="testimonial__avatar">JW</div>
+      <div class="testimonial__info">
+        <span class="testimonial__name">James Whitfield</span>
+        <span class="testimonial__role">Managing Partner, Whitfield & Cole Solicitors</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta" id="cta">
+  <div class="cta__content">
+    <div class="cta__text-block reveal-up">
+      <h2 class="cta__title">Ready to be seen by AI?</h2>
+      <p class="cta__body">Only 23% of marketers are investing in GEO. The first-mover advantage is real &mdash; and it's closing fast. Get your free GEO score today.</p>
+      <form class="cta__form" onsubmit="event.preventDefault()">
+        <input type="email" class="cta__input" placeholder="Enter your business email" aria-label="Business email address" required>
+        <button type="submit" class="btn btn--primary btn--md">
+          <span class="btn__text-wrap">
+            <span class="btn__text">Get Started</span>
+            <span class="btn__text-clone" aria-hidden="true">Get Started</span>
+          </span>
+        </button>
+      </form>
+    </div>
+    <div class="cta__visual reveal-card">
+      <div class="cta__globe" id="globe-container">
+        <div class="globe-ring globe-ring--1"></div>
+        <div class="globe-ring globe-ring--2"></div>
+        <div class="globe-ring globe-ring--3"></div>
+        <div class="globe-core"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <svg width="160" height="28" viewBox="0 0 180 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 28C8 28 4 22 4 16C4 10 8 4 12 4C10 10 14 14 16 16C18 18 20 14 18 10C22 14 24 18 24 22C24 26 20 28 16 28C14 28 12 27 10 26" fill="url(#flame-grad2)" />
+        <defs>
+          <linearGradient id="flame-grad2" x1="4" y1="28" x2="20" y2="4" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FF2200"/>
+            <stop offset="0.5" stop-color="#FF4433"/>
+            <stop offset="1" stop-color="#FF8855"/>
+          </linearGradient>
+        </defs>
+        <text x="32" y="22" fill="currentColor" font-family="'Clash Display', sans-serif" font-weight="600" font-size="20">Ember <tspan fill="#FF4433">GEO</tspan></text>
+      </svg>
+      <p class="footer__tagline">Generative Engine Optimisation for UK businesses. Be seen. Be cited. Be chosen.</p>
+    </div>
+    <div class="footer__links">
+      <a href="#capabilities" class="footer__link">Services</a>
+      <a href="#testimonial" class="footer__link">Case Studies</a>
+      <a href="#cta" class="footer__link">Contact</a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+      <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer__link">Twitter</a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>&copy; 2026 Ember GEO Ltd. All rights reserved.</span>
+    <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer" class="footer__attribution">Created with Perplexity Computer</a>
+  </div>
+</footer>
+
+<script src="./app.js" defer></script>
+</body>
+</html>
